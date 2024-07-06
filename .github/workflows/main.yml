@@ -1,6 +1,9 @@
 name: Typeset Resume
 
 on:
+  push:
+    branches:
+      - 20240606
   pull_request:
     branches:
       - main
@@ -8,7 +11,7 @@ on:
 
 jobs:
   typeset_resume:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
