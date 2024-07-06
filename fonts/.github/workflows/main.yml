@@ -1,0 +1,27 @@
+name: Typeset Resume
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  typeset_resume:
+    runs_on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ezratucker_resume.tex
+          latexmk_use_xelatex: true
+          extra_fonts: |
+            ./fonts/lato/*.ttf
+            ./fonts/raleway/*.ttf
+          post_compile: "latexmk -c"
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: ezratucker_resume.pdf
