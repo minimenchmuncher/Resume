@@ -1,0 +1,296 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+% Ezra's repository (forked from @deedydas)
+% https://github.com/minimenchmuncher/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+\definecolor{date}{HTML}{666666} 
+\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{headings}{HTML}{6A6A6A}
+\definecolor{subheadings}{HTML}{333333}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{Ezra Tucker}{\urlstyle{same}\href{https://www.linkedin.com/in/ezztucker}{LinkedIn: ezztucker} | \href{https://www.github.com/minimenchmuncher}{Github: minimenchmuncher} | 
+\href{mailto:ezra@landtucker.com}{ezra@landtucker.com} | \href{tel:+18182030269}{818.203.0269} \
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Stanford University}
+\descript{MS in Civil \& Environmental Engineering}
+\location{Sept 2010 - Jun 2011 | Stanford, CA}
+\sectionsep
+
+\subsection{Carleton College}
+\descript{BA in Physics}
+\location{Sept 2006 - Jun 2010 | Northfield, MN}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Courses \& Research}
+%\subsection{Graduate}
+%Focus on atmosphere and energy, renewable energy technologies, distributed generation, energy efficient building design, and air pollution.\\
+%{\footnotesize{\textbf{Thesis:}}} 
+%{\footnotesize \textit{\textbf{Stanford Solar Water Heating Installation Project Characterization}}}
+%\sectionsep
+
+%\subsection{Undergraduate}
+%Liberal arts education emphasizing math and physics. \\
+%{\footnotesize {\textbf{Research:}}}\\
+%{\footnotesize \textit{\textbf{LIGO: Dead Channel Monitor development}}}\\
+%Designed, coded and tested monitor to detect malfunctioning environmental sensors\\
+%{\footnotesize \textit{\textbf{Virgo: PQ Veto}}}\\
+%Created veto to filter possible gravity wave events\\
+%{\footnotesize {\textbf{Publications:}}}\\
+%Abadie \emph{et al.}, Phys. Rev. D {\bf 85} 082002 (2012). ``Search for gravitational waves from low mass compact binary coalescence in LIGO's sixth science run and Virgo's science runs 2 and 3''\\
+%{\footnotesize \textit{\textbf{Member of LSC Authors List}}}
+%\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Web Links}
+%Web | \href{https://landtucker.wordpress.com/about-ezra}{\bf land|tucker}\\
+Github | \href{https://github.com/minimenchmuncher}{\bf minimenchmuncher} \\
+%github.io | \href{https://minimenchmuncher.github.io}{\bf minimenchmuncher}\\
+LinkedIn |  \href{https://www.linkedin.com/in/ezztucker}{\bf ezztucker} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+	\runsubsection{Energetic Capital}
+	\descript{| Senior Director of Data Science and Information Systems}
+	\location{Aug 2018 - Presesnt | Boston, MA}
+	\vspace{\topsep}
+	\begin{tightemize}
+	\item Developed and maintained risk-based pricing models for insurance policies
+	\item Lead team of data scientists and software developers  %is "lead" too weak?
+	\item Coordinated with Underwriting team to develop new tools and products
+	\item Designed, authored, and maintained data analytics and user interfaces
+	\item Modeled outcomes based on precise insurance policy language
+	\item Managed company IT infrastructure
+	\item Instituted software industry best-practices for VCS, task management, and documentation 
+	\end{tightemize}
+	\sectionsep
+
+\runsubsection{Xcel Energy}
+\descript{| Analyst, Resource Planning }
+\location{Nov 2016 - Aug 2018 | Denver, CO}
+\begin{tightemize}
+\item Contributed to the management of the 2017 All-Source Solicitation
+\item Communicated with bidders throughout Solicitation process
+\item Authored novel strategies for utility ownership of renewable generators
+\item Analyzed wind and solar resources and transmission congestion in Colorado
+%\item Analyzed solar production in various regions within Colorado
+%\item Investigated transmission congestion trends in the San Luis Valley
+%\item Developed wind resource model for southern Colorado
+%\item Assisted in developing project plan for the 2017 All-Source Solicitation
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Altenex LLC}
+\descript{| Senior Engineer, Data \& Analytics }
+\location{Oct 2011 - Nov 2016 | Boston, MA}
+\begin{tightemize}
+\item Designed novel strategies for identifying top tier renewable energy assets
+\item Coordinated with Client Services team to deliver customer driven analyses
+\item Developed CRM for renewable energy marketplace participants
+\item Collected, analyzed, and combined energy industry data and proprietary data
+\item Assessed financial risks of wholesale renewable energy purchases
+%\item Integrated analytical techniques into production analytics framework
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{Cambridge Coaching} \descript{| Tutor}
+%\location{June 2015 - Nov 2016 | Greater Boston area}
+%\begin{tightemize}
+%\item Tutored in high school and college--level calculus, physics, and chemistry
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Certificates}
+%\runsubsection{Data Science Specialization}
+%\descript{| Coursera/Johns Hopkins}
+%\location{Completed Jul 2017}
+%\begin{tightemize}
+%\item Subjects covered include statistics inference,\\regression models, machine learning, and analysis reporting
+%\item Gained expertise and experience with modern analytical techniques
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{stuff}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Managing and mentoring a team of engaged employees
+	\item Translating legal documents into possible financial outcomes for practices
+	\item Deciding crucial internal resource allocation based on process
+\end{tightemize}
+\subsection{Tools}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Preference for python and R, have experience in other languages, and am willing to learn new ones
+\item Preference for GNU/Linux, but am still at home in both Windows and MacOS
+\item Preference for PostgreSQL but am comfortable with any RDBMS
+\item Also proficient in \LaTeX, Git, Photoshop, Lightroom, Sharepoint
+\end{tightemize}
+
+\section{Random}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item I was captain of my college's ballroom dance team
+\item My gifts to my groomsmen were alpaca wool scarves that I wove myself
+\item My wife was my college orchestra's stand partner (both of us play flute)
+\end{tightemize}
+
+
+% \subsection{Analytics \& Programming} 
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item R | Python | GIS (ArcGIS \& QGIS) | \mbox{MS Excel}
+% \item C\# | VBA (Excel \& Access) | C/C++
+% \end{tightemize}
+
+% \subsection{Information Technology}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item MacOS | Windows 10/2012 | Linux (Debian, Arch; bash, zsh)
+% \item PostgreSQL | MS SQL (SQL Server 2014) | SQLite | MS Access | Dynamics CRM
+% \end{tightemize}
+
+% \subsection{Other}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item Adobe Photoshop | Adobe Lightroom
+% \item \LaTeX | Git | Sharepoint (2007 \& 2016)
+% \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Research}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+\end{minipage} 
+\end{document}
