@@ -13,9 +13,10 @@ TSWLatexianTemp*
 ## Intermediate documents:
 *.dvi
 # these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+# I don't actually want to include final results in git repo; use github actions to build and deploy
+*.ps
+*.eps
+*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
