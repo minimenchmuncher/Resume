@@ -10,11 +10,16 @@
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue
+}
 
 % Publications
 \usepackage{cite}
 \renewcommand\refname{\vskip -1.5cm}
+\usepackage{bookmark}
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
@@ -79,10 +84,10 @@ BoldItalicFont  =   {*-SemiBoldItalic}
 \usepackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-%\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-%\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-%Last Updated on \today
-%\end{textblock}}
+\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+Last Updated on \today
+\end{textblock}}
 
 % Name command
 \newcommand{\namesection}[3]{
